@@ -1,0 +1,205 @@
+/* 🌌 Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+  }
+  
+  /* 🎨 CSS Variables (Color Palette and Typography) */
+  :root {
+    /* Colors */
+    --primary-color: #66fcf1; /* Teal */
+    --secondary-color: #45a29e; /* Darker Teal */
+    --accent-color: #ff6b6b; /* Coral */
+    --background-dark: #0b0c10; /* Dark Navy */
+    --background-light: #1f2833; /* Lighter Navy */
+    --text-light: #c5c6c7; /* Light Gray */
+    --text-dark: #0b0c10; /* Dark Navy */
+    --glass-background: rgba(255, 255, 255, 0.1); /* Glassmorphism background */
+    --glass-border: rgba(255, 255, 255, 0.2); /* Glassmorphism border */
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Default shadow */
+  
+    /* Typography */
+    --font-primary: 'Poppins', sans-serif;
+    --font-secondary: 'Roboto', sans-serif;
+    --font-size-base: 16px;
+    --font-size-large: 1rem;
+    --font-size-medium: 0.5rem;
+    --font-size-small: 0.2rem;
+    --line-height-base: 1.6;
+  }
+  
+  /* 🖌️ Base Typography */
+  body {
+    font-family: var(--font-primary);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    color: var(--text-light);
+    background: linear-gradient(to bottom, var(--background-dark), var(--background-light));
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-secondary);
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  
+  h1 {
+    font-size: 1rem;
+  }
+  
+  h2 {
+    font-size: 1rem;
+  }
+  
+  h3 {
+    font-size: 1rem;
+  }
+  
+  p {
+    margin-bottom: 1rem;
+    color: var(--text-light);
+  }
+  
+  a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: var(--secondary-color);
+  }
+  
+  /* 🖼️ Images and Media */
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Default border radius for images */
+  }
+  
+  /* 🛠️ Utility Classes */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-primary {
+    color: var(--primary-color);
+  }
+  
+  .text-secondary {
+    color: var(--secondary-color);
+  }
+  
+  .bg-dark {
+    background-color: var(--background-dark);
+  }
+  
+  .bg-light {
+    background-color: var(--background-light);
+  }
+  
+  .glass-effect {
+    background: var(--glass-background);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+  }
+  
+  /* 🎯 Buttons */
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: var(--font-size-medium);
+    font-weight: bold;
+    color: var(--text-dark);
+    background: var(--primary-color);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn:hover {
+    background: var(--secondary-color);
+    transform: translateY(-2px);
+  }
+  
+  .btn-accent {
+    background: var(--accent-color);
+    color: white;
+  }
+  
+  .btn-accent:hover {
+    background: #ff4d4d;
+  }
+  
+  /* 🌀 Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes glow {
+    0% {
+      text-shadow: 0 0 15px rgba(102, 252, 241, 0.8), 0 0 30px rgba(102, 252, 241, 0.5);
+    }
+    50% {
+      text-shadow: 0 0 25px rgba(102, 252, 241, 1), 0 0 50px rgba(102, 252, 241, 0.8);
+    }
+    100% {
+      text-shadow: 0 0 15px rgba(102, 252, 241, 0.8), 0 0 30px rgba(102, 252, 241, 0.5);
+    }
+  }
+  
+  .glow-text {
+    animation: glow 2s infinite ease-in-out;
+  }
+  
+  /* 📱 Responsive Design */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    h2 {
+      font-size: 1.75rem;
+    }
+  
+    h3 {
+      font-size: 1.5rem;
+    }
+  
+    .container {
+      width: 95%;
+      padding: 10px;
+    }
+  }

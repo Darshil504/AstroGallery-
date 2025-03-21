@@ -1,23 +1,15 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import "./ImageCard.css";
 
 const ImageCard = ({ image }) => {
   return (
     <div className="image-card">
-      {image.media_type === "image" ? (
-        <img src={image.url} alt={image.title} loading="lazy" />
-      ) : (
-        <iframe src={image.url} title={image.title} frameBorder="0"></iframe>
-      )}
-
-      <div className="image-info">
-        <h3>{image.title}</h3>
-        <p>{image.date}</p>
-        <Link to={`/details/${image.date}`} className="view-btn">
-          View Details
-        </Link>
-      </div>
+      <img src={image.url} alt={image.title} className="image" />
+      <h3 className="title">{image.title}</h3>
+      <p className="date">{image.date}</p>
+      <Link to={`/details/${image.date}`} className="details-btn">
+        View Details
+      </Link>
     </div>
   );
 };
