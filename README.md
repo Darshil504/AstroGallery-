@@ -1,12 +1,62 @@
-# React + Vite
+# NASA Astronomy Gallery 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based NASA Astronomy Gallery using Vite, featuring API integration, search, favorites, and lazy loading.
 
-Currently, two official plugins are available:
+## Features 🌟
+- **NASA APOD API Integration** 📡
+- **Search Functionality** 🔍
+- **Favorites Section** ❤️
+- **Lazy Loading for Better Performance** ⚡
+- **Modern & Clean UI** 🎨
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation 🛠️
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-repo/astro-gallery.git
+   cd astro-gallery
+   ```
 
-## Expanding the ESLint configuration
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. Start the development server:
+   ```sh
+   npm run dev
+   ```
+
+## Technologies Used 💻
+- **React (Vite)**
+- **CSS (Custom Styling)**
+- **NASA APOD API**
+- **Firebase (For Storing Favorites)**
+
+## Folder Structure 📂
+```
+/astro-gallery
+  ├── /src
+  │   ├── /components
+  │   │   ├── Navbar.jsx
+  │   │   ├── ImageCard.jsx
+  │   │   ├── Favorites.jsx
+  │   │   └── SearchBar.jsx
+  │   ├── /pages
+  │   │   ├── Home.jsx
+  │   │   └── Favorites.jsx
+  │   ├── App.js
+  │   ├── main.js
+  ├── /public
+  ├── package.json
+  ├── README.md
+```
+
+## Contributing 🤝
+1. Fork the repository 🍴  
+2. Create a new branch 🌿  
+3. Make your changes and commit them ✅  
+4. Push to your fork and submit a pull request 📩  
+
+---
+
+### 🚀 Enjoy Exploring the Universe!
